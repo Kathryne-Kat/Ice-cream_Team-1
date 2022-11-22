@@ -1,0 +1,43 @@
+.btn {
+	box-sizing: border-box;
+	display: block;
+	outline: none;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.29;
+	color: var(--btn-text-dark-color);
+	border-radius: 10px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	// бокові падинги різні і задаємо в окремим класом
+}
+
+.btn-primary {
+	border: 2px solid var(--base-btn-color);
+	background-color: transparent;
+	transition-property: color, background-color, border;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover {
+		border: 2px solid var(--active-btn-color);
+	}
+	&:focus {
+		border: 2px solid var(--active-btn-color);
+		color:var(--btn-text-light-color);
+	}
+}
+.btn-secondary {
+	border: none;
+	border: 2px solid transparent;
+	background: var(--base-btn-color);
+	transition-property: color, background-color, border;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover {
+		background: var(--active-btn-color);
+	}
+	&:focus {
+		background:var(--active-btn-color);
+		color: var(--btn-text-light-color);
+	}
+}
