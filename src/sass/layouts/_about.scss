@@ -13,6 +13,15 @@
   text-transform: uppercase;
   color: $primary-text-color;
   margin-bottom: 12px;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 800;
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
 }
 
 .about__title {
@@ -25,21 +34,91 @@
   text-transform: uppercase;
   color: $primary-text-color;
   max-width: 200px;
-  margin-bottom: 32px;
+
   margin-left: auto;
   margin-right: auto;
+
+  @include adaptive(tab-min) {
+    font-size: 34px;
+    min-width: 454px;
+  }
+  @include adaptive(desk) {
+    font-size: 36px;
+    min-width: 481px;
+  }
+}
+
+// .about__img {
+//   display: block;
+//   width: 279px;
+//   height: 278px;
+//   border-radius: 50%;
+//   background-color: rgba(248, 210, 78, 70%);
+//   margin-bottom: 62px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+// .about__img::after {
+//   content: '';
+//   background-image: url('../images/product/milkshakes1200@1x.jpg');
+//   z-index: 2;
+// }
+
+.about__wrapping {
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.about__img-wrap {
+  margin-bottom: 40px;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 72px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 82px;
+  }
 }
 
 .about__img {
-  display: block;
-  width: 279px;
-  height: 278px;
-  border-radius: 50%;
-  background-color: rgba(248, 210, 78, 70%);
-  margin-bottom: 62px;
+  width: 280px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    height: 356px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 500px;
+    height: 529px;
+  }
 }
 
 .about__wrap {
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 32px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 100px;
+    margin-bottom: 172px;
+    margin-top: 172px;
+  }
 }
 
 .about__text {
@@ -52,6 +131,16 @@
   margin-left: auto;
   margin-right: auto;
 
+  @media screen and (min-width: 768px) {
+    max-width: 334px;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    max-width: 463px;
+  }
   &:not(:last-child) {
     margin-bottom: 4px;
   }
@@ -61,6 +150,16 @@
   display: flex;
   margin: 0;
   justify-content: center;
+  margin-top: 10px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+    margin-top: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 54px;
+  }
 }
 
 .about__btn {
