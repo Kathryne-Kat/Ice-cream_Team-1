@@ -1,0 +1,130 @@
+.slider-container {
+  background-image: url("../images/image/icecream1xbgMOB.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/image/icecream2xbgMOB.jpg");
+  }
+  @media screen and (min-width: 480px) {
+    background-image: url("../images/image/icecream1xbgTAB.jpg");
+  }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/image/icecream2xbgTAB.jpg");
+    height: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url("../images/image/icecream1xbgDesk.jpg");
+    height: 100%;
+  }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/image/icecream2xbgDesk.jpg");
+  }
+}
+
+.slider {
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: 479px) {
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 91.67%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 84.42%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 84.42%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.slider_picture {
+  margin: 0 auto;
+  width: 280px;
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 100%;
+  }
+}
+
+.customer-reviews {
+  margin-top: 80px;
+}
+
+.slider-pictures {
+  width: 85px;
+  height: 85px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 480px) {
+    margin-top: 100px;
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 140px;
+    
+  }
+}
+
+.customer-photo {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.reviews-box {
+  width: 280px;
+  height: 256px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  
+
+  @media screen and (min-width: 480px) {
+    width: 100%;
+    border-radius: 24px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 768px) {
+    height: 100%;
+  }
+}
+
+.customer-name {
+  margin-top: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.85;
+  color: var(--accent-text-color);
+}
+
+.reviews-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2.583;
+  color: var(--primary-text-color);
+  padding: 35px 39px;
+   @media screen and (min-width: 768px) {
+     padding: 28px 29px;
+  }
+}
