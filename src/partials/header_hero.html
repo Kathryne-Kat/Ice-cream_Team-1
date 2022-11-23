@@ -1,0 +1,102 @@
+<header class="header">
+  <div class="container">
+    <a href="" class="logo">
+      <svg>
+        <use href="./images/icons.svg#logo-hero"></use>
+      </svg>
+    </a>
+    <nav class="header__nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="" class="nav__link">How it’s made?</a>
+        </li>
+        <li class="nav__item">
+          <a href="" class="nav__link">Our products</a>
+        </li>
+        <li class="nav__item">
+          <a href="" class="nav__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button
+      type="button"
+      class="mobile-menu__btn mobile-menu__btn--open"
+    ></button>
+    <button type="button" class="header__btn">Buy now</button>
+  </div>
+  <div class="mobile-menu is-hidden">
+    <div class="container">
+      <a href="" class="logo">Logo</a>
+      <button
+        type="button"
+        class="mobile-menu__btn mobile-menu__btn--close"
+      ></button>
+      <nav class="mobile-menu__nav">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Home</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">How it’s made?</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Our products</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="mobile-menu__btn">Buy now</button>
+    </div>
+  </div>
+</header>
+<section class="hero">
+  <div class="container hero__container">
+    <div class="hero__content">
+      <h1 class="hero__title">
+        ice cream made with <span class="hero__title--large">passion</span>
+      </h1>
+      <a href="" class="hero__link hero__link--outlined">Products</a>
+      <a href="" class="hero__link hero__link--underlined">How it’s made?</a>
+    </div>
+    <div class="hero__meta">
+      <p class="hero__text"><span class="hero__count">16</span> cafes</p>
+      <p class="hero__text"><span class="hero__count">23</span> food trucks</p>
+    </div>
+    <img
+      srcset="
+        ./images/hero-header/hero-ice-mob.png     176w,
+        ./images/hero-header/hero-ice-mob@2x.png  352w,
+        ./images/hero-header/hero-ice-tab.png     268w,
+        ./images/hero-header/hero-ice-tab@2x.png  536w,
+        ./images/hero-header/hero-ice-desk.png    456w,
+        ./images/hero-header/hero-ice-desk@2x.png 912w
+      "
+      sizes="(min-width: 1200px) 456px, (min-width: 768px) 268px, (min-width: 320px) 176px, 100vw"
+      src="./images/hero-header/hero-ice-mob.png"
+      alt="Ice cream with eyes"
+      class="hero__img"
+    />
+    <div class="hero__desc">
+      <img
+        srcset="
+          ./images/hero-header/hero-plate-tab.png     152w,
+          ./images/hero-header/hero-plate-tab@2x.png  304w,
+          ./images/hero-header/hero-plate-desk.png    225w,
+          ./images/hero-header/hero-plate-desk@2x.png 450w
+        "
+        sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px 100vw"
+        src="./images/hero-header/hero-plate-tab.png"
+        alt="Ice cream on a plate"
+      />
+      <p class="hero__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+    </div>
+  </div>
+</section>
