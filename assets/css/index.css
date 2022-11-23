@@ -1,4 +1,43 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+  --primary-color: #84A178;
+  --accent-color: #F8D24E;
+  --primary-text-color: #FCFCFC;
+  --accent-text-color: #131313;
+  --page-bg-color: #84a178;
+  --modal-bg-color: #ffffff;
+  --accent-color: #f8d24e;
+  --base-btn-color: #f8d24e;
+  --active-btn-color: #0a8817;
+  --btn-text-dark-color: #000000;
+  --btn-text-light-color: #fcfcfc;
+  --primary-title-color: #fcfcfc;
+  --secondary-title-color: #131313;
+  --primary-text-color: #fcfcfc;
+  --secondary-text-color: #131313;
+  --primary-link-color: #fcfcfc;
+  --secondary-link-color: #131313;
+  --hover-link-color: #d6936d;
+  --svg-base-color: #84a178;
+  --svg-active-color: #ffffff;
+  --time: 250ms;
+  --function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   color: var(--primary-text-color);
   background-color: var(--page-bg-color);
@@ -48,51 +87,30 @@ a {
   text-decoration: none;
 }
 
-:root {
-  --primary-color: #84A178;
-  --accent-color: #F8D24E;
-  --primary-text-color: #FCFCFC;
-  --accent-text-color: #131313;
-  --page-bg-color: #84a178;
-  --modal-bg-color: #ffffff;
-  --accent-color: #f8d24e;
-  --base-btn-color: #f8d24e;
-  --active-btn-color: #0a8817;
-  --btn-text-dark-color: #000000;
-  --btn-text-light-color: #fcfcfc;
-  --primary-title-color: #fcfcfc;
-  --secondary-title-color: #131313;
-  --primary-text-color: #fcfcfc;
-  --secondary-text-color: #131313;
-  --primary-link-color: #fcfcfc;
-  --secondary-link-color: #131313;
-  --hover-link-color: #d6936d;
-  --svg-base-color: #84a178;
-  --svg-active-color: #ffffff;
-  --time: 250ms;
-  --function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .btn {
