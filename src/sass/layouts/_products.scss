@@ -69,6 +69,7 @@
   justify-content: center;
   align-items: center;
   row-gap: 170px;
+  flex-wrap: wrap;
   @include adaptive(mob-only) {
     flex-direction: column;
   }
@@ -237,15 +238,15 @@
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url('../images/product/milkshakes320@2x.jpg');
+        background-image: url('../images/product/milkshakes320-2@2x.jpg');
       }
       @media screen and (min-width: 481px) {
-        background-image: url('../images/product/milkshakes768@1x.jpg');
+        background-image: url('../images/product/milkshakes768-2@1x.jpg');
         @media (min-device-pixel-ratio: 2),
           (-webkit-min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
-          background-image: url('../images/product/milkshakes768@2x.jpg');
+          background-image: url('../images/product/milkshakes768-2@2x.jpg');
         }
       }
       @media screen and (min-width: 769px) {
