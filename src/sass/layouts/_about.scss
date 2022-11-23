@@ -1,0 +1,81 @@
+.about {
+  padding-top: 61px;
+}
+
+.container {
+}
+
+.about__text-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  text-transform: uppercase;
+  color: $primary-text-color;
+  margin-bottom: 12px;
+}
+
+.about__title {
+  font-family: 'Seymour One', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.27;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $primary-text-color;
+  max-width: 200px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about__img {
+  display: block;
+  width: 279px;
+  height: 278px;
+  border-radius: 50%;
+  background-color: rgba(248, 210, 78, 70%);
+  margin-bottom: 62px;
+}
+
+.about__wrap {
+}
+
+.about__text {
+  font-size: 12px;
+  line-height: 1.76;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $primary-text-color;
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
+}
+
+.about__btn-wrap {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+}
+
+.about__btn {
+  background-color: $base-btn-color;
+  padding: 12px 34px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__icon {
+  margin-left: 4px;
+}
