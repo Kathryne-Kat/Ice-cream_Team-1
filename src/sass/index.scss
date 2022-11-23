@@ -1,9 +1,9 @@
-@import './common';
-@import './base/reset';
-
 @import './utils/vars';
 @import './utils/visually-hidden';
 @import './utils/mixins';
+
+@import './common';
+@import './base/reset';
 
 @import './components/container';
 @import './components/buttons';
