@@ -158,7 +158,7 @@
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url('../images/product/ice-back320@2x.jpg');
+        background-image: url('../images/product/ice-cream320@2x.jpg');
       }
       @media screen and (min-width: 481px) {
         background-image: url('../images/product/ice-cream768@1x.jpg');
@@ -281,6 +281,4 @@
 .product-button {
   border: none;
   background-color: inherit;
-}
-.icon {
 }
