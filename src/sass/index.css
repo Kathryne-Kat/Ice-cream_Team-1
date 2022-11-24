@@ -1161,6 +1161,9 @@ a {
   line-height: 1.86;
   color: var(--hover-link-color);
 }
+.contacts__location:hover {
+  text-decoration: underline;
+}
 
 .contacts__chicago {
   display: flex;
