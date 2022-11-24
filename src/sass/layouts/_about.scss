@@ -36,6 +36,7 @@
   margin-right: auto;
 
   @include adaptive(tab-min) {
+    margin-bottom: 0px;
     font-size: 34px;
     min-width: 454px;
   }
@@ -44,22 +45,78 @@
     min-width: 481px;
   }
 }
-// .about__img {
-//   display: block;
-//   width: 279px;
-//   height: 278px;
-//   border-radius: 50%;
-//   background-color: rgba(248, 210, 78, 70%);
-//   margin-bottom: 62px;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
+.about__img {
+  display: block;
+  width: 279px;
+  height: 278px;
+  border-radius: 50%;
+  background-color: rgba(248, 210, 78, 70%);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  flex-shrink: 0;
+  margin-bottom: 60px;
+  margin-top: 32px;
 
-// .about__img::after {
-//   content: '';
-//   background-image: url('../images/product/milkshakes1200@1x.jpg');
-//   z-index: 2;
-// }
+  @media screen and (min-width: 768px) {
+    margin-top: 72px;
+    width: 336px;
+    height: 330px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 490px;
+    height: 490px;
+    margin-top: 82px;
+    margin-bottom: 33px;
+  }
+}
+
+.about__img::after {
+  content: '';
+  display: block;
+  width: 279px;
+  height: 278px;
+  position: absolute;
+  border-radius: 50%;
+  bottom: -20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../images/about/cow-just_sm@1x.jpeg');
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/about/cow-just_sm@2x.jpeg');
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/about/cow-just_md@1x.jpeg');
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/about/cow-just_md@2x.jpeg');
+    }
+
+    width: 336px;
+    height: 330px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/about/cow-just_lg@1x.jpeg');
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/about/cow-just_lg@2x.jpeg');
+    }
+    bottom: -33px;
+    width: 490px;
+    height: 490px;
+  }
+}
 
 .about__wrapping {
   display: block;
@@ -86,22 +143,22 @@
   }
 }
 
-.about__img {
-  width: 280px;
-  height: 300px;
-  display: flex;
-  justify-content: center;
+// .about__img {
+//   width: 280px;
+//   height: 300px;
+//   display: flex;
+//   justify-content: center;
 
-  @media screen and (min-width: 768px) {
-    width: 336px;
-    height: 356px;
-  }
+//   // @media screen and (min-width: 768px) {
+//   //   width: 336px;
+//   //   height: 356px;
+//   // }
 
-  @media screen and (min-width: 1200px) {
-    width: 500px;
-    height: 529px;
-  }
-}
+//   // @media screen and (min-width: 1200px) {
+//   //   width: 500px;
+//   //   height: 529px;
+//   // }
+// }
 
 .about__wrap {
   display: block;
@@ -126,6 +183,7 @@
   min-width: 220px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 4px;
 
   @media screen and (min-width: 768px) {
     min-width: 334px;
@@ -136,10 +194,6 @@
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     min-width: 463px;
-  }
-
-  &:not(:last-child) {
-    margin-bottom: 4px;
   }
 }
 
