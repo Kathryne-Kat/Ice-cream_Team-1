@@ -1,6 +1,6 @@
 <header class="header">
   <div class="container header__container">
-    <a href="" class="logo">
+    <a href="#home" class="logo">
       <svg class="logo__icon">
         <use href="./images/icons.svg#logo-hero"></use>
       </svg>
@@ -8,67 +8,77 @@
     <nav class="header__nav">
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="" class="nav__link">Home</a>
+          <a href="#home" class="nav__link">Home</a>
         </li>
         <li class="nav__item">
-          <a href="" class="nav__link">How it’s made?</a>
+          <a href="#about" class="nav__link">How it’s made?</a>
         </li>
         <li class="nav__item">
-          <a href="" class="nav__link">Our products</a>
+          <a href="#products" class="nav__link">Our products</a>
         </li>
         <li class="nav__item">
-          <a href="" class="nav__link">Contact</a>
+          <a href="#contacts" class="nav__link">Contact</a>
         </li>
       </ul>
     </nav>
-    <button
-      type="button"
-      class="mobile-menu__btn mobile-menu__btn--open"
-      data-menu-open
-    >
-      <svg class="mobile-menu__icon">
-        <use href="./images/icons.svg#menu-burger"></use>
-      </svg>
-    </button>
-    <button type="button" class="header__btn">Buy now</button>
+    <div class="header__buttons">
+      <button
+        type="button"
+        class="mobile-menu__btn mobile-menu__btn--open"
+        data-menu-open
+      >
+        <svg class="mobile-menu__icon">
+          <use href="./images/icons.svg#menu-burger"></use>
+        </svg>
+      </button>
+      <button type="button" class="header__btn header__btn--desk">
+        Buy now
+      </button>
+    </div>
   </div>
-  <div class="mobile-menu menu-is-hidden" data-menu>
-    <div class="container mobile-menu__container">
-      <div class="mobile-menu__top">
-        <a href="" class="logo">
-          <svg class="logo__icon">
-            <use href="./images/icons.svg#logo-hero"></use>
-          </svg>
-        </a>
-        <button
-          type="button"
-          class="mobile-menu__btn mobile-menu__btn--close"
-          data-menu-close
-        >
-          <svg class="mobile-menu__icon">
-            <use href="./images/icons.svg#close-mobile-menu"></use>
-          </svg>
-        </button>
-      </div>
-
-      <div class="mobile-menu__bottom">
-        <nav class="mobile-menu__nav">
-          <ul class="mobile-menu__list">
-            <li class="mobile-menu__item">
-              <a href="" class="mobile-menu__link">Home</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a href="" class="mobile-menu__link">How it’s made?</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a href="" class="mobile-menu__link">Our products</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a href="" class="mobile-menu__link">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <button type="button" class="mobile-menu__btn">Buy now</button>
+  <div class="menu-overlay menu-is-hidden" data-menu>
+    <div class="mobile-menu">
+      <div class="container mobile-menu__container">
+        <div class="mobile-menu__top">
+          <a href="" class="logo" id="home">
+            <svg class="logo__icon">
+              <use href="./images/icons.svg#logo-hero"></use>
+            </svg>
+          </a>
+          <button
+            type="button"
+            class="mobile-menu__btn mobile-menu__btn--close"
+            data-menu-close
+          >
+            <svg class="mobile-menu__icon">
+              <use href="./images/icons.svg#close-mobile-menu"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mobile-menu__bottom">
+          <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a href="#home" class="mobile-menu__link">Home</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#about" class="mobile-menu__link">How it’s made?</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#products" class="mobile-menu__link">Our products</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#contacts" class="mobile-menu__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="header__btn header__btn--mob">
+            Buy now
+            <svg class="header__icon">
+              <use href="./images/icons.svg#arrow-small"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -80,9 +90,11 @@
         <h1 class="hero__title">
           ice cream made with <span class="hero__title--large">passion</span>
         </h1>
-        <div class="hero__links">
-          <a href="" class="hero__link hero__link--outlined">Products</a>
-          <a href="" class="hero__link hero__link--underlined"
+        <div class="hero__buttons">
+          <a href="#products" class="hero__link hero__link--outlined"
+            >Products</a
+          >
+          <a href="#about" class="hero__link hero__link--underlined"
             >How it’s made?</a
           >
         </div>
@@ -92,8 +104,8 @@
         <p class="hero__tag"><span class="hero__count">23</span> food trucks</p>
       </div>
     </div>
-
-    <!-- <img
+    <div class="hero__picture"></div>
+    <img
       srcset="
         ./images/hero-header/hero-blur-mob.png     182w,
         ./images/hero-header/hero-blur-mob@2x.png  364w,
@@ -106,7 +118,7 @@
       src="./images/hero-header/hero-blur-mob.png"
       alt="Blur"
       class="hero__blur"
-    /> -->
+    />
     <img
       srcset="
         ./images/hero-header/hero-ice-mob.png     176w,
