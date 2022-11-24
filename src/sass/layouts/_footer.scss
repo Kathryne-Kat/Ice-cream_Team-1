@@ -82,6 +82,11 @@
   }
 }
 
+.footer__social-icon:hover,
+.footer__social-icon:focus {
+  fill: var(--btn-text-light-color);
+}
+
 .footer__tel {
   margin-bottom: 40px;
   font-weight: 700;
