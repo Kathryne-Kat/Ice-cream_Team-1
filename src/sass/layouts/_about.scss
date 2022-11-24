@@ -1,0 +1,231 @@
+.about {
+  padding-top: 61px;
+}
+
+.about__text-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  text-transform: uppercase;
+  color: $primary-text-color;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 800;
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
+}
+
+.about__title {
+  font-family: 'Seymour One', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.27;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $primary-text-color;
+  max-width: 200px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @include adaptive(tab-min) {
+    margin-bottom: 0px;
+    font-size: 34px;
+    min-width: 454px;
+  }
+  @include adaptive(desk) {
+    font-size: 36px;
+    min-width: 481px;
+  }
+}
+.about__img {
+  display: block;
+  width: 279px;
+  height: 278px;
+  border-radius: 50%;
+  background-color: rgba(248, 210, 78, 70%);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  flex-shrink: 0;
+  margin-bottom: 60px;
+  margin-top: 32px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 72px;
+    width: 336px;
+    height: 330px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 490px;
+    height: 490px;
+    margin-top: 82px;
+    margin-bottom: 33px;
+  }
+}
+
+.about__img::after {
+  content: '';
+  display: block;
+  width: 279px;
+  height: 278px;
+  position: absolute;
+  border-radius: 50%;
+  bottom: -20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../images/about/cow-just_sm@1x.jpeg');
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/about/cow-just_sm@2x.jpeg');
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/about/cow-just_md@1x.jpeg');
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/about/cow-just_md@2x.jpeg');
+    }
+
+    width: 336px;
+    height: 330px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/about/cow-just_lg@1x.jpeg');
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/about/cow-just_lg@2x.jpeg');
+    }
+    bottom: -33px;
+    width: 490px;
+    height: 490px;
+  }
+}
+
+.about__wrapping {
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.about__img-wrap {
+  margin-bottom: 40px;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 72px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 82px;
+    margin-bottom: 0;
+  }
+}
+
+// .about__img {
+//   width: 280px;
+//   height: 300px;
+//   display: flex;
+//   justify-content: center;
+
+//   // @media screen and (min-width: 768px) {
+//   //   width: 336px;
+//   //   height: 356px;
+//   // }
+
+//   // @media screen and (min-width: 1200px) {
+//   //   width: 500px;
+//   //   height: 529px;
+//   // }
+// }
+
+.about__wrap {
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 32px;
+    margin-top: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 100px;
+    margin-top: 172px;
+  }
+}
+
+.about__text {
+  font-size: 12px;
+  line-height: 1.76;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $primary-text-color;
+  min-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 334px;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    min-width: 463px;
+  }
+}
+
+.about__btn-wrap {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  margin-top: 10px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+    margin-top: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 54px;
+  }
+}
+
+.about__btn {
+  background-color: $base-btn-color;
+  padding: 12px 34px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__icon {
+  margin-left: 4px;
+}
