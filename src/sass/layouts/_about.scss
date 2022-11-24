@@ -84,21 +84,21 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('../images/about/cow-just_sm@1x.jpeg');
+  background-image: url('../images/about/cow-just_sm@1x.jpg');
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('../images/about/cow-just_sm@2x.jpeg');
+    background-image: url('../images/about/cow-just_sm@2x.jpg');
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url('../images/about/cow-just_md@1x.jpeg');
+    background-image: url('../images/about/cow-just_md@1x.jpg');
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/about/cow-just_md@2x.jpeg');
+      background-image: url('../images/about/cow-just_md@2x.jpg');
     }
 
     width: 336px;
@@ -106,12 +106,12 @@
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: url('../images/about/cow-just_lg@1x.jpeg');
+    background-image: url('../images/about/cow-just_lg@1x.jpg');
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/about/cow-just_lg@2x.jpeg');
+      background-image: url('../images/about/cow-just_lg@2x.jpg');
     }
     bottom: -33px;
     width: 490px;
