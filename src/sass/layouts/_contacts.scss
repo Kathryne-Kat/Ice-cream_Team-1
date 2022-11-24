@@ -58,6 +58,7 @@
   color: var(--hover-link-color);
   &:hover {
     text-decoration: underline;
+    cursor: pointer;
   }
 }
 
