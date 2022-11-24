@@ -22,7 +22,7 @@
 }
 
 .product-modal {
-  position: fixed;
+  position: absolute;
   z-index: 100;
   top: 50%;
   left: 50%;
@@ -34,9 +34,9 @@
   border: 2px solid #f8d24e;
   border-radius: 10px;
   text-align: center;
-  -webkit-transform: translate(-50%, -50%) scaleY(1) rotate(0);
-      -ms-transform: translate(-50%, -50%) scaleY(1) rotate(0);
-          transform: translate(-50%, -50%) scaleY(1) rotate(0);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   -o-transition-property: transform;

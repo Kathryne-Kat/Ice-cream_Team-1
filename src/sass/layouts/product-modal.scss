@@ -16,7 +16,7 @@
 }
 
 .product-modal {
-  position: fixed;
+  position: absolute;
   z-index: 100;
   top: 50%;
   left: 50%;
@@ -28,7 +28,7 @@
   border: 2px solid #f8d24e;
   border-radius: 10px;
   text-align: center;
-  transform: translate(-50%, -50%) scaleY(1) rotate(0);
+  transform: translate(-50%, -50%);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
