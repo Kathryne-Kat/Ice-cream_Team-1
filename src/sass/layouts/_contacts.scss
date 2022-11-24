@@ -12,6 +12,11 @@
   }
 }
 
+.location-btn,
+.franchise-btn {
+  color: var(--accent-text-color);
+}
+
 .contacts__header {
   visibility: hidden;
 }
