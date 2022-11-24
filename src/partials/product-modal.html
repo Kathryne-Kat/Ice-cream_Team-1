@@ -1,27 +1,36 @@
 <section class="product-modal">
   <div class="product-modal-close">
-    <button type="button" class="product-modal">
-      <svg class="icon" width="20" height="20">
+    <button type="button" class="product-close-btn">
+      <svg class="product-close-icon" width="20" height="20">
         <use href="./images/global-icons/sprite-icons.svg#close-modal"></use>
       </svg>
     </button>
   </div>
   <h2 class="product-modal-title">Chololate icecream</h2>
   <div class="product-img-wrap">
-    <!-- <img
+    <div class="product-img-picture"></div>
+    <!-- <picture class="product-img-picture">
+      <source
         srcset="
-          ./image/portfolio/project1-mob-450@1x.jpg  450w,
-          ./image/portfolio/project1-mob-450@2x.jpg  900w,
-          ./image/portfolio/project1-tab-354@1x.jpg  354w,
-          ./image/portfolio/project1-tab-354@2x.jpg  708w,
-          ./image/portfolio/project1-desk-370@1x.jpg 370w,
-          ./image/portfolio/project1-desk-370@2x.jpg 740w
+          ./images/product/ice-cream-choco1200@1x.jpg 1x,
+          ./images/product/ice-cream-choco1200@2x.jpg 2x
         "
-        sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:320px) 450px, 100vw"
-        src="../images/"
-        alt="Веб-сайт Технокряк"
+        media="(min-width: 1200px)"
       />
-      <img src="../images/" alt="" /> -->
+      <source
+        srcset="
+          ./images/product/ice-cream-choco320@1x.jpg 1x,
+          ./images/product/ice-cream-choco320@2x.jpg 2x
+        "
+        media="(max-width: 1200px)"
+      />
+      <img
+        src="./images/product/ice-cream-choco320@1x.jpg"
+        alt="Chocolate ice-cream"
+        width="131"
+        height="131"
+      />
+    </picture> -->
   </div>
   <ul class="product-nutrition-list">
     <li class="product-nutrition-item">
@@ -41,7 +50,7 @@
       <div class="product-nutrition-name">Carbs</div>
     </li>
   </ul>
-  <h3 class="product-ingredients">Ingredients</h3>
+  <h3 class="product-ingredients-title">Ingredients</h3>
   <ul class="product-ingredients-list">
     <li class="product-ingredients-item">
       <div class="product-ingredients-name">Milk</div>
@@ -71,44 +80,39 @@
 
   <form class="product-modal-form">
     <div class="product-modal-field">
-      <label for="client-name" class="product-modal-label">Ім'я</label>
-      <!-- <div class="order-input-wrap"> -->
-      <input
-        type="text"
-        id="client-name"
-        name="client-name"
-        class="product-modal-input"
-        placeholder="Name"
-        required
-      />
-      <!-- </div> -->
+      <label>
+        <input
+          type="text"
+          id="client-name"
+          name="client-name"
+          class="product-modal-input"
+          placeholder="Name"
+          required
+        />
+      </label>
     </div>
     <div class="product-modal-field">
-      <label for="client-phone" class="product-modal-label">Телефон</label>
-      <!-- <div class="order-input-wrap"> -->
-      <input
-        type="tel"
-        id="client-phone"
-        name="client-phone"
-        class="client-modal-input"
-        placeholder="Phone"
-        required
-      />
-      <!-- <svg class="order-input-icon" width="18" height="18">
-            <use href="./image/svg/icons.svg#phone-black"></use>
-          </svg> -->
-      <!-- </div> -->
+      <label>
+        <input
+          type="tel"
+          id="client-phone"
+          name="client-phone"
+          class="product-modal-input"
+          placeholder="Phone"
+          required
+        />
+      </label>
     </div>
     <div class="product-modal-field">
-      <label for="product-comment" class="product-modal-label">Коментар</label>
+      <label for="product-comment" class="product-modal-label"></label>
       <textarea
         id="client-comment"
         name="client-comment"
-        class="client-modal-area"
+        class="product-modal-area"
         placeholder="Comment"
       ></textarea>
     </div>
-    <button type="submit" class="product-submit-btn btn-secondary">
+    <button type="submit" class="product-submit-btn btn-secondary btn">
       Submit
     </button>
   </form>

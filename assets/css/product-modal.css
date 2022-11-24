@@ -1,1 +1,90 @@
-/*# sourceMappingURL=product-modal.css.map */
+.product-modal {
+  padding: 20px 28px;
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+}
+
+.product-close-btn {
+  display: block;
+  font-size: inherit;
+  font-weight: inherit;
+  background-color: inherit;
+  border: none;
+  padding: 0;
+  margin-left: auto;
+  margin-top: -8px;
+  -webkit-transform: translateX(16px);
+      -ms-transform: translateX(16px);
+          transform: translateX(16px);
+}
+
+.product-close-icon {
+  fill: var(--secondary-link-color);
+}
+
+.product-modal-title {
+  font-family: "Seymour One", sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--secondary-link-color);
+}
+
+.product-img-wrap {
+  position: relative;
+  width: 131px;
+  height: 139px;
+  border-radius: 50%;
+}
+.product-img-wrap::after {
+  position: relative;
+  top: -124px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(156, 190, 143, 0.7)), to(rgba(156, 190, 143, 0.7))), #d9d9d9;
+  background: -o-linear-gradient(bottom, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  -webkit-box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+          box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.product-img-picture {
+  position: relative;
+  width: 131px;
+  height: 131px;
+  z-index: 2;
+  border-radius: 50%;
+  background-image: url("../images/product/ice-cream-choco320@1x.jpg");
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .product-img-picture {
+    background-image: url("../images/product/ice-cream-choco320@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .product-img-picture {
+    background-image: url("../images/product/ice-cream-choco1200@1x.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .product-img-picture {
+    background-image: url("../images/product/ice-cream-choco1200@1x.jpg");
+  }
+}
+
+.product-nutrition-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product-nutrition-item {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: var(--secondary-text-color);
+}/*# sourceMappingURL=product-modal.css.map */
