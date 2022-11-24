@@ -1,8 +1,64 @@
+.product-backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 250ms;
+       -o-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+       -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-product-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .product-modal {
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 568px;
+  max-height: 968px;
   padding: 20px 28px;
   background: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%) scaleY(1) rotate(0);
+      -ms-transform: translate(-50%, -50%) scaleY(1) rotate(0);
+          transform: translate(-50%, -50%) scaleY(1) rotate(0);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+       -o-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+       -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.product-backdrop.is-product-hidden .product-modal {
+  -webkit-transform: translate(-50%, 0%) scaleY(0) rotate(90deg);
+      -ms-transform: translate(-50%, 0%) scaleY(0) rotate(90deg);
+          transform: translate(-50%, 0%) scaleY(0) rotate(90deg);
+}
+@media (min-width: 768px) {
+  .product-modal {
+    padding: 32px 40px;
+    max-height: 995px;
+  }
 }
 
 .product-close-btn {
@@ -18,6 +74,14 @@
       -ms-transform: translateX(16px);
           transform: translateX(16px);
 }
+@media (min-width: 768px) {
+  .product-close-btn {
+    margin-top: -20px;
+    -webkit-transform: translateX(28px);
+        -ms-transform: translateX(28px);
+            transform: translateX(28px);
+  }
+}
 
 .product-close-icon {
   fill: var(--secondary-link-color);
@@ -28,18 +92,23 @@
   font-size: 20px;
   line-height: 1.4;
   color: var(--secondary-link-color);
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .product-modal-title {
+    margin-bottom: 24px;
+  }
 }
 
 .product-img-wrap {
-  position: relative;
   width: 131px;
   height: 139px;
   border-radius: 50%;
+  margin: 0 auto 24px;
 }
 .product-img-wrap::after {
   position: relative;
   top: -124px;
-  left: 0;
   content: "";
   display: block;
   width: 131px;
@@ -80,11 +149,138 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .product-nutrition-list {
+    margin-bottom: 48px;
+  }
 }
 
 .product-nutrition-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  width: 53px;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.25;
   color: var(--secondary-text-color);
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .product-nutrition-item {
+    font-size: 12px;
+  }
+}
+
+.product-nutrition-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 43px;
+  height: 43px;
+  font-size: 10px;
+  line-height: 2.8;
+  border-radius: 50%;
+  background: #9cbe8f;
+  border: 2px solid #9cbe8f;
+  -webkit-box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+          box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+}
+
+.product-nutrition-name {
+  font-size: 10px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.product-ingredients-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--secondary-title-color);
+  margin-bottom: 24px;
+}
+
+.product-ingredients-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 11px;
+  line-height: 1.76;
+  color: var(--secondary-text-color);
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .product-ingredients-list {
+    margin-bottom: 48px;
+  }
+}
+
+.product-ingredients-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product-modal-field {
+  margin-bottom: 16px;
+}
+
+.product-modal-input,
+.product-modal-area {
+  width: 100%;
+  max-width: 368px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--secondary-text-color);
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  padding: 11px;
+}
+
+.product-modal-area {
+  height: 84px;
+  resize: none;
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .product-modal-area {
+    margin-bottom: 32px;
+  }
+}
+
+.product-submit-btn {
+  padding-left: 34px;
+  padding-right: 34px;
+  margin: 0 auto;
 }/*# sourceMappingURL=product-modal.css.map */

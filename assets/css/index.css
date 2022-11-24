@@ -1,4 +1,5 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+<<<<<<< Updated upstream
 :root {
   --primary-color: #84A178;
   --accent-color: #F8D24E;
@@ -38,6 +39,8 @@
   overflow: hidden;
 }
 
+=======
+>>>>>>> Stashed changes
 body {
   color: var(--primary-text-color);
   background-color: var(--page-bg-color);
@@ -87,6 +90,48 @@ a {
   text-decoration: none;
 }
 
+<<<<<<< Updated upstream
+=======
+:root {
+  --primary-color: #84A178;
+  --accent-color: #F8D24E;
+  --primary-text-color: #FCFCFC;
+  --accent-text-color: #131313;
+  --page-bg-color: #84a178;
+  --modal-bg-color: #ffffff;
+  --accent-color: #f8d24e;
+  --base-btn-color: #f8d24e;
+  --active-btn-color: #0a8817;
+  --btn-text-dark-color: #000000;
+  --btn-text-light-color: #fcfcfc;
+  --primary-title-color: #fcfcfc;
+  --secondary-title-color: #131313;
+  --primary-text-color: #fcfcfc;
+  --secondary-text-color: #131313;
+  --primary-link-color: #fcfcfc;
+  --secondary-link-color: #131313;
+  --hover-link-color: #d6936d;
+  --svg-base-color: #84a178;
+  --svg-active-color: #ffffff;
+  --time: 250ms;
+  --function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+>>>>>>> Stashed changes
 .container {
   width: 100%;
   padding-left: 20px;
@@ -168,6 +213,7 @@ a {
 .btn-secondary:focus {
   background: var(--active-btn-color);
   color: var(--btn-text-light-color);
+<<<<<<< Updated upstream
 }
 
 .products {
@@ -500,4 +546,6 @@ a {
 .product-button {
   border: none;
   background-color: inherit;
+=======
+>>>>>>> Stashed changes
 }/*# sourceMappingURL=index.css.map */
