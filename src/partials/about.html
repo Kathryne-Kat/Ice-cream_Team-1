@@ -1,4 +1,4 @@
-<section class="about section">
+<section class="about section" id="about">
   <div class="container">
     <p class="about__text-title">tradition and love</p>
     <h2 class="about__title">how it’s made?</h2>
@@ -6,10 +6,20 @@
       <div class="about__img-wrap">
         <img
           class="about__img"
-          src="./images/about/cow_@1x.png"
+          src="./images/about/cow_sm@1x.png"
+          srcset="
+            ./images/about/cow_sm@1x.png  313w,
+            ./images/about/cow_sm@2x.png  626w,
+            ./images/about/cow_md@1x.png  376w,
+            ./images/about/cow_md@2x.png  752w,
+            ./images/about/cow_lg@1x.png  546w,
+            ./images/about/cow_lg@2x.png 1092w
+          "
+          sizes="(min-width: 1200px) 546px, (min-width: 768px) 376px, (min-width: 480px) 313px, 100vw"
           alt="cow"
           class="about__img"
           width="280"
+          height="300"
         />
       </div>
       <div class="about__wrap">
