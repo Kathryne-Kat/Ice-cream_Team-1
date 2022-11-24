@@ -1,0 +1,258 @@
+.product-backdrop {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-product-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.product-modal {
+  overflow: scroll;
+  height: 100%;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 568px;
+  max-height: 968px;
+  padding: 20px 28px;
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .product-backdrop.is-product-hidden & {
+    transform: translate(-50%, 0%) scaleY(0) rotate(90deg);
+  }
+  @media (min-width: 768px) {
+    padding: 32px 40px;
+    max-height: 995px;
+  }
+  //   @include adaptive(tab-min) {
+  //     padding: 32px 40px;
+  //   }
+}
+.product-close-btn {
+  display: block;
+  font-size: inherit;
+  font-weight: inherit;
+  background-color: inherit;
+  border: none;
+  padding: 0;
+  margin-left: auto;
+  margin-top: -8px;
+  transform: translateX(16px);
+
+  @media (min-width: 768px) {
+    margin-top: -20px;
+    transform: translateX(28px);
+  }
+  //   @include adaptive(tab-min) {
+  //     margin-top: -20px;
+  //     transform: translateX(28px);
+  //   }
+}
+.product-close-icon {
+  fill: var(--secondary-link-color);
+}
+.product-modal-title {
+  font-family: 'Seymour One', sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--secondary-link-color);
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+  //   @include adaptive(tab-min) {
+  //     margin-bottom: 24px;
+  //   }
+}
+.product-img-wrap {
+  width: 131px;
+  height: 139px;
+  border-radius: 50%;
+  margin: 0 auto 24px;
+
+  &::after {
+    position: relative;
+    top: -124px;
+    content: '';
+    display: block;
+    width: 131px;
+    height: 131px;
+    border-radius: 50%;
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  }
+}
+
+.product-img-picture {
+  position: relative;
+  width: 131px;
+  height: 131px;
+  z-index: 2;
+  border-radius: 50%;
+  background-image: url('../images/product/ice-cream-choco320@1x.jpg');
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/product/ice-cream-choco320@2x.jpg');
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/product/ice-cream-choco1200@1x.jpg');
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/product/ice-cream-choco1200@1x.jpg');
+    }
+  }
+}
+.product-nutrition-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 40px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 48px;
+  }
+  //   @include adaptive(tab-min) {
+  //     margin-bottom: 48px;
+  //   }
+}
+.product-nutrition-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 53px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.25;
+  color: var(--secondary-text-color);
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    font-size: 12px;
+  }
+  //   @include adaptive(tab-min) {
+  //     font-size: 12px;
+  //   }
+}
+.product-nutrition-value {
+  //   @include centeredFlex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43px;
+  height: 43px;
+  font-size: 10px;
+  line-height: 2.8;
+  border-radius: 50%;
+  background: #9cbe8f;
+  border: 2px solid #9cbe8f;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+}
+.product-nutrition-name {
+  font-size: 10px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.product-ingredients-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--secondary-title-color);
+  margin-bottom: 24px;
+}
+.product-ingredients-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 11px;
+  line-height: 1.76;
+  color: var(--secondary-text-color);
+  margin-bottom: 40px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 48px;
+  }
+  //   @include adaptive(tab-min) {
+  //     margin-bottom: 48px;
+  //   }
+}
+.product-ingredients-item {
+  display: flex;
+  justify-content: space-between;
+}
+.product-ingredients-name {
+}
+.product-ingredients-value {
+}
+.product-modal-form {
+}
+.product-modal-field {
+  margin-bottom: 16px;
+}
+
+.product-modal-input,
+.product-modal-area {
+  width: 100%;
+  max-width: 368px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--secondary-text-color);
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  padding: 11px;
+}
+.product-modal-input {
+}
+
+.product-modal-area {
+  height: 84px;
+  resize: none;
+  margin-bottom: 24px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+
+  //   @include adaptive(tab-min) {
+  //     margin-bottom: 32px;
+  //   }
+}
+.product-submit-btn {
+  padding-left: 34px;
+  padding-right: 34px;
+  margin: 0 auto;
+}
+.btn-secondary {
+}
+.btn {
+}

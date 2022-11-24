@@ -1,0 +1,99 @@
+<div class="product-backdrop is-product-hidden" data-modal>
+  <div class="product-modal">
+    <div class="product-modal-close">
+      <button type="button" class="product-close-btn" data-modal-close>
+        <svg class="product-close-icon" width="20" height="20">
+          <use href="./images/global-icons/sprite-icons.svg#close-modal"></use>
+        </svg>
+      </button>
+    </div>
+    <h2 class="product-modal-title">Chololate icecream</h2>
+    <div class="product-img-wrap">
+      <div class="product-img-picture"></div>
+    </div>
+    <ul class="product-nutrition-list">
+      <li class="product-nutrition-item">
+        <div class="product-nutrition-value">320</div>
+        <div class="product-nutrition-name">kcal</div>
+      </li>
+      <li class="product-nutrition-item">
+        <div class="product-nutrition-value">4g</div>
+        <div class="product-nutrition-name">Prote...</div>
+      </li>
+      <li class="product-nutrition-item">
+        <div class="product-nutrition-value">8,2g</div>
+        <div class="product-nutrition-name">Fats</div>
+      </li>
+      <li class="product-nutrition-item">
+        <div class="product-nutrition-value">40,4g</div>
+        <div class="product-nutrition-name">Carbs</div>
+      </li>
+    </ul>
+    <h3 class="product-ingredients-title">Ingredients</h3>
+    <ul class="product-ingredients-list">
+      <li class="product-ingredients-item">
+        <div class="product-ingredients-name">Milk</div>
+        <div class="product-ingredients-value">100ml</div>
+      </li>
+      <li class="product-ingredients-item">
+        <div class="product-ingredients-name">Belgian chocolate</div>
+        <div class="product-ingredients-value">20g</div>
+      </li>
+      <li class="product-ingredients-item">
+        <div class="product-ingredients-name">Cream</div>
+        <div class="product-ingredients-value">150 ml</div>
+      </li>
+      <li class="product-ingredients-item">
+        <div class="product-ingredients-name">Cocoa powder</div>
+        <div class="product-ingredients-value">30g</div>
+      </li>
+      <li class="product-ingredients-item">
+        <div class="product-ingredients-name">Sugar</div>
+        <div class="product-ingredients-value">40g</div>
+      </li>
+      <li class="product-ingredients-item">
+        <div class="product-ingredients-name">Vanilla sugar</div>
+        <div class="product-ingredients-value">10g</div>
+      </li>
+    </ul>
+
+    <form class="product-modal-form">
+      <div class="product-modal-field">
+        <label>
+          <input
+            type="text"
+            id="client-name"
+            name="client-name"
+            class="product-modal-input"
+            placeholder="Name"
+            required
+          />
+        </label>
+      </div>
+      <div class="product-modal-field">
+        <label>
+          <input
+            type="tel"
+            id="client-phone"
+            name="client-phone"
+            class="product-modal-input"
+            placeholder="Phone"
+            required
+          />
+        </label>
+      </div>
+      <div class="product-modal-field">
+        <label for="product-comment" class="product-modal-label"></label>
+        <textarea
+          id="client-comment"
+          name="client-comment"
+          class="product-modal-area"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <button type="submit" class="product-submit-btn btn-secondary btn">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
