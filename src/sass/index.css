@@ -472,6 +472,14 @@ a {
   }
 }
 
+.contacts__header {
+  visibility: hidden;
+}
+
+.contacts__link {
+  color: var(--accent-text-color);
+}
+
 .contacts__item {
   padding: 40px 32px;
   border-radius: 24px;
