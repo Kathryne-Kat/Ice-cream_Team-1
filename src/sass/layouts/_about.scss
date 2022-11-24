@@ -2,9 +2,6 @@
   padding-top: 61px;
 }
 
-.container {
-}
-
 .about__text-title {
   font-weight: 700;
   font-size: 18px;
@@ -47,7 +44,6 @@
     min-width: 481px;
   }
 }
-
 // .about__img {
 //   display: block;
 //   width: 279px;
@@ -81,10 +77,12 @@
 
   @media screen and (min-width: 768px) {
     margin-top: 72px;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1200px) {
     margin-top: 82px;
+    margin-bottom: 0;
   }
 }
 
@@ -110,13 +108,11 @@
 
   @media screen and (min-width: 768px) {
     margin-left: 32px;
-    margin-bottom: 80px;
     margin-top: 80px;
   }
 
   @media screen and (min-width: 1200px) {
     margin-left: 100px;
-    margin-bottom: 172px;
     margin-top: 172px;
   }
 }
