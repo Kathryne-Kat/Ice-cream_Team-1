@@ -69,7 +69,6 @@
   justify-content: center;
   align-items: center;
   row-gap: 170px;
-  flex-wrap: wrap;
   @include adaptive(mob-only) {
     flex-direction: column;
   }
