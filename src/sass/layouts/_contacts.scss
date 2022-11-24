@@ -56,6 +56,10 @@
 
   line-height: 1.86;
   color: var(--hover-link-color);
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
 
 .contacts__chicago {
