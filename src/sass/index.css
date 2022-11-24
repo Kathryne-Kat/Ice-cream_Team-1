@@ -552,14 +552,22 @@ a {
 }
 
 .location-btn {
+  display: flex;
+  align-items: center;
   background: var(--accent-color);
   border-radius: 10px;
   border: 2px solid transparent;
-  padding: 12px 40px;
+  padding-left: 40px;
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
-  width: 200px;
+  width: 196px;
+  height: 42px;
+}
+@media screen and (min-width: 1200px) {
+  .location-btn {
+    padding-left: 40px;
+  }
 }
 
 .franchise-btn {
@@ -570,7 +578,8 @@ a {
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
-  width: 200px;
+  width: 196px;
+  height: 42px;
 }
 
 .contacts__btn {
