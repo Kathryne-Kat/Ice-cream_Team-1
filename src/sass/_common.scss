@@ -9,7 +9,7 @@ body {
 
   cursor: url('../images/cursor.svg'), auto;
 
-  &.menu-no-scroll {
+  &.no-scroll {
     overflow: hidden;
   }
 }
