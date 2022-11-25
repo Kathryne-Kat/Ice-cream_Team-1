@@ -1,5 +1,6 @@
 .product-backdrop {
   position: fixed;
+  z-index: 300;
   top: 0;
   width: 100vw;
   height: 100vh;
@@ -7,6 +8,7 @@
   transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: auto;
 }
 
 .is-product-hidden {
@@ -22,7 +24,8 @@
   z-index: 100;
   top: 50%;
   left: 50%;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   max-width: 568px;
   max-height: 968px;
   padding: 20px 28px;
@@ -52,13 +55,14 @@
   font-weight: inherit;
   background-color: inherit;
   border: none;
-  padding: 0;
+  padding: 12px;
   margin-left: auto;
-  margin-top: -8px;
+  margin-top: -20px;
+  margin-right: -12px;
   transform: translateX(16px);
 
   @media (min-width: 768px) {
-    margin-top: -20px;
+    margin-top: -32px;
     transform: translateX(28px);
   }
   //   @include adaptive(tab-min) {
