@@ -204,10 +204,6 @@
   flex-grow: 1;
 }
 
-.mobile-menu__nav {
-  margin-bottom: 50px;
-}
-
 .mobile-menu__list {
   text-align: center;
 }
@@ -266,7 +262,7 @@
   background-image: url('../images/hero-header/dots-mob.svg');
   background-repeat: no-repeat;
   background-position: left bottom;
-  overflow: hidden;
+  // overflow: hidden;
 
   @include adaptive(tab-min) {
     padding-top: 80px;

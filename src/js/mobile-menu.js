@@ -13,10 +13,10 @@
 
   function toggleMenu() {
     refs.menu.classList.toggle('menu-is-hidden');
-    refs.body.classList.toggle('menu-no-scroll');
+    refs.body.classList.toggle('no-scroll');
   }
   function removeMenu() {
     refs.menu.classList.add('menu-is-hidden');
-    refs.body.classList.remove('menu-no-scroll');
+    refs.body.classList.remove('no-scroll');
   }
 })();
