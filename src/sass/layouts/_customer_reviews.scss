@@ -1,177 +1,76 @@
-.slider-container {
-  background-image: url('../images/gallery/icecream1xbgMOB.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  position: relative;
-  @media (min-resolution: 2dppx) {
-    background-image: url('../images/gallery/icecream2xbgMOB.jpg');
-  }
-  @media screen and (min-width: 480px) {
-    background-image: url('../images/gallery/icecream1xbgTAB.jpg');
-  }
-  @media (min-resolution: 2dppx) {
-    background-image: url('../images/gallery/icecream2xbgTAB.jpg');
-    height: 100%;
-  }
-  @media screen and (min-width: 768px) {
-    background-image: url('../images/gallery/icecream1xbgDesk.jpg');
-    height: 100%;
-  }
-  @media (min-resolution: 2dppx) {
-    background-image: url('../images/gallery/icecream2xbgDesk.jpg');
-  }
-}
-
-.slider {
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and (max-width: 479px) {
-    margin: 0 auto;
-  }
-
-  @media screen and (min-width: 480px) {
-    width: 91.67%;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 84.42%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 84.42%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.slider_picture {
-  margin: 0 auto;
-  width: 280px;
-  @media screen and (min-width: 480px) {
-    width: 100%;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 100%;
-  }
-
-  @media screen and (min-width: 1200px) {
-    max-width: 100%;
-  }
-}
-
-.first-slider-picture {
-  margin: 0 auto;
-  width: 280px;
-  @media screen and (min-width: 480px) {
-    width: 100%;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 100%;
-  }
-
-  @media screen and (min-width: 1200px) {
-    max-width: 100%;
-    max-height: 410.75px;
-  }
-}
-
-
-
-
-.customer-reviews {
-  margin-top: 80px;
-}
-
-.slider-pictures {
+.reviwers-img {
   width: 85px;
   height: 85px;
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and (min-width: 480px) {
-    margin-top: 100px;
-    margin-bottom: 32px;
-  }
-  @media screen and (min-width: 768px) {
-    margin-top: 140px;
-  }
-}
-
-.customer-photo {
-  width: 100%;
   border-radius: 50%;
-}
-
-.reviews-box {
-  width: 280px;
-  height: 256px;
-  background-color: var(--primary-color);
-  border-radius: 10px;
-  margin-top: 32px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-
-  @media screen and (min-width: 480px) {
-    width: 100%;
-    border-radius: 24px;
-    margin: 0 auto;
-    padding: 28px;
+  margin: 80px auto 32px auto;
+  padding-top: 80px;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-image: url('../images/gallery/sliderPortret1xMOB1.jpg');
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/gallery/sliderPortret2xMOB1.jpg');
   }
   @media screen and (min-width: 768px) {
-    height: 100%;
+    background-image: url('../images/gallery/sliderPortret1xTAB1.jpg');
+    margin-top: 100px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/gallery/sliderPortret2xTAB1.jpg');
+    }
   }
-}
-
-.customer-name {
-  margin-top: 32px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.85;
-  color: var(--accent-text-color);
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/gallery/sliderPortret1xDesk1.jpg');
+    margin-top: 140px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/gallery/sliderPortret2x1Desk1.jpg');
+    }
+  }
 }
 
 .reviews-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2.583;
-  color: var(--primary-text-color);
+  width: 100%;
   padding: 35px 39px;
- 
+  text-align: center;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 2.55;
+  letter-spacing: normal;
+  background-color: var(--primary-color);
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+
   @media screen and (min-width: 768px) {
-    padding: 28px 29px;
+    width: 705px;
+    padding: 28px 80px;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 968px;
+    padding: 43px 109px;
+    font-size: 16px;
   }
 }
 
-.swiper {
-  
-  @media screen and (min-width: 480px) {
-    width: 100%;
-  }
-  @media screen and (min-width: 768px) {
-    width: 100%;
-  }
-}
+.reviews-name {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+  color: var(--accent-text-color);
 
-.second-slider-picture, .third-slider-picture {
-  width: 280px;
-  height: 130px;
-  @media screen and (min-width: 480px) {
-    width: 403px;
-  height: 187.09px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-     width: 594px;
-  height: 275.78px;
-  }
-   @media screen and (min-width: 1200px) {
-    width: 986px;
-  height: 410.75px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
   }
 }
