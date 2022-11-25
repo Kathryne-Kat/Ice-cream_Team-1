@@ -19,6 +19,7 @@ img {
 }
 input,
 textarea {
+  resize: none;
   padding: 0;
 }
 
@@ -26,7 +27,6 @@ address {
   font-style: normal;
 }
 button {
-  cursor: pointer;
   font-family: inherit;
 }
 a {
