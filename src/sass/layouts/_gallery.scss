@@ -1,0 +1,93 @@
+.slider-container {
+  background-image: url('../images/gallery/icecream1xbgMOB.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  height: 1037px;
+  //   position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../images/gallery/icecream2xbgMOB.jpg');
+  }
+  @media screen and (min-width: 480px) {
+    background-image: url('../images/gallery/icecream1xbgTAB.jpg');
+  }
+  @media (min-resolution: 2dppx) {
+    background-image: url('../images/gallery/icecream2xbgTAB.jpg');
+    height: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/gallery/icecream1xbgDesk.jpg');
+    height: 100%;
+    height: 1017px;
+  }
+  @media (min-resolution: 2dppx) {
+    background-image: url('../images/gallery/icecream2xbgDesk.jpg');
+    height: 1050px;
+  }
+}
+
+.gallery {
+  height: 150px;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    height: 180px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 320px;
+  }
+}
+.slider-rel {
+  position: relative;
+}
+
+.swiper {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 18px;
+  @media screen and (min-width: 480px) {
+    width: 403px;
+    height: 187px;
+  }
+  @media screen and (min-width: 768px) {
+    // width: 100%;
+    width: 704px;
+    height: 327px;
+    top: -135px;
+  }
+  @media screen and (min-width: 1200px) {
+    // width: 100%;
+    width: 1013px;
+    height: 422px;
+    top: -100px;
+  }
+}
+.slider_picture {
+  margin: 0 auto;
+  width: 280px;
+  height: 130px;
+  border-radius: 18px;
+
+  @media screen and (min-width: 480px) {
+    width: 403px;
+    height: 187px;
+  }
+  @media screen and (min-width: 768px) {
+    // width: 100%;
+    width: 704px;
+    height: 327px;
+  }
+  @media screen and (min-width: 1200px) {
+    // width: 100%;
+    width: 1013px;
+    height: 422px;
+  }
+}

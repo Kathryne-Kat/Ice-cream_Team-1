@@ -45,10 +45,10 @@
       </button>
     </div>
   </div>
-  <div class="menu-overlay menu-is-hidden" data-menu>
+  <div class="overlay is-hidden" data-menu>
     <div class="mobile-menu">
       <div class="container mobile-menu__container">
-        <div class="mobile-menu__top">
+        <div class="mobile-menu__wrap">
           <a href="" class="logo">
             <svg class="logo__icon">
               <use href="./images/icons.svg#logo-hero"></use>
@@ -65,60 +65,76 @@
             </svg>
           </button>
         </div>
-        <div class="mobile-menu__bottom">
-          <nav class="mobile-menu__nav">
-            <ul class="mobile-menu__list">
-              <li class="mobile-menu__item">
-                <a href="#home" class="mobile-menu__link">Home</a>
-              </li>
-              <li class="mobile-menu__item">
-                <a href="#about" class="mobile-menu__link">How it’s made?</a>
-              </li>
-              <li class="mobile-menu__item">
-                <a href="#products" class="mobile-menu__link">Our products</a>
-              </li>
-              <li class="mobile-menu__item">
-                <a href="#contacts" class="mobile-menu__link">Contact</a>
-              </li>
-            </ul>
-          </nav>
-          <button
-            type="button"
-            aria-controls="header-modal-window"
-            class="header__btn header__btn--mob"
-            data-header-modal-open
-          >
-            Buy now
-            <svg class="header__icon">
-              <use href="./images/icons.svg#arrow-small"></use>
-            </svg>
-          </button>
-        </div>
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a href="#home" class="mobile-menu__link">Home</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#about" class="mobile-menu__link">How it’s made?</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#products" class="mobile-menu__link">Our products</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#contacts" class="mobile-menu__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          type="button"
+          aria-controls="header-modal-window"
+          class="header__btn header__btn--mob"
+          data-mobile-modal-open
+        >
+          Buy now
+          <svg class="header__icon">
+            <use href="./images/icons.svg#arrow-small"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
 </header>
-<div class="modal-overlay modal-is-hidden">
-  <div class="header-modal" id="header-modal-window" data-header-modal>
-    <button type="button" data-header-modal-close>
-      <svg>
+<button type="button" aria-label="Go to the top" class="page-up-btn">
+  <svg class="page-up-icon">
+    <use href="./images/icons.svg#up-arrow"></use>
+  </svg>
+</button>
+<div class="overlay is-hidden" data-header-modal>
+  <div class="header-modal" id="header-modal-window">
+    <button
+      type="button"
+      class="header-modal__btn header-modal__btn--close"
+      data-header-modal-close
+    >
+      <svg class="header-modal__icon">
         <use href="./images/icons.svg#close-modal"></use>
       </svg>
-      <p>Buy now</p>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <form>
-        <input type="text" id="name" />
-        <label for="name">Name</label>
-        <input type="tel" id="tel" />
-        <label for="tel">Phone</label>
-        <textarea name="comment" id="comment" rows="3"></textarea>
-        <label for="comment">Comment</label>
-      </form>
     </button>
+    <p class="header-modal__title">Buy now</p>
+    <ul class="header-modal__list">
+      <li class="header-modal__item">
+        <p class="header-modal__text">Ice cream</p>
+      </li>
+      <li class="header-modal__item">
+        <p class="header-modal__text">Ice coffee</p>
+      </li>
+      <li class="header-modal__item">
+        <p class="header-modal__text">Milkshake</p>
+      </li>
+    </ul>
+    <form class="header-modal__form">
+      <input type="text" id="name" />
+      <label for="name">Name</label>
+      <input type="tel" id="tel" />
+      <label for="tel">Phone</label>
+      <textarea name="comment" id="comment" rows="3"></textarea>
+      <label for="comment">Comment</label>
+      <button type="button" class="header-modal__btn header-modal__btn--submit">
+        Submit
+      </button>
+    </form>
   </div>
 </div>
 <section class="hero">
