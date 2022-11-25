@@ -1,10 +1,16 @@
+.gallery {
+  height: 460px;
+}
+
 .slider-container {
   background-image: url('../images/gallery/icecream1xbgMOB.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
+  height: 460px;
   position: relative;
+
   @media (min-resolution: 2dppx) {
     background-image: url('../images/gallery/icecream2xbgMOB.jpg');
   }
@@ -27,6 +33,7 @@
 .slider {
   margin-left: auto;
   margin-right: auto;
+
   @media screen and (max-width: 479px) {
     margin: 0 auto;
   }
@@ -47,7 +54,11 @@
     margin-right: auto;
   }
 }
-
+// .swiper {
+//   position: absolute;
+//   top: -100px;
+//   left: 50%;
+// }
 .slider_picture {
   margin: 0 auto;
   width: 280px;
@@ -81,11 +92,9 @@
   }
 }
 
-
-
-
 .customer-reviews {
   margin-top: 80px;
+  display: none;
 }
 
 .slider-pictures {
@@ -143,14 +152,13 @@
   line-height: 2.583;
   color: var(--primary-text-color);
   padding: 35px 39px;
- 
+
   @media screen and (min-width: 768px) {
     padding: 28px 29px;
   }
 }
 
 .swiper {
-  
   @media screen and (min-width: 480px) {
     width: 100%;
   }
@@ -159,19 +167,20 @@
   }
 }
 
-.second-slider-picture, .third-slider-picture {
+.second-slider-picture,
+.third-slider-picture {
   width: 280px;
   height: 130px;
   @media screen and (min-width: 480px) {
     width: 403px;
-  height: 187.09px;
+    height: 187.09px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-     width: 594px;
-  height: 275.78px;
+    width: 594px;
+    height: 275.78px;
   }
-   @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     width: 986px;
-  height: 410.75px;
+    height: 410.75px;
   }
 }
