@@ -121,6 +121,7 @@
     width: 100%;
     border-radius: 24px;
     margin: 0 auto;
+    padding: 28px;
   }
   @media screen and (min-width: 768px) {
     height: 100%;
@@ -142,18 +143,35 @@
   line-height: 2.583;
   color: var(--primary-text-color);
   padding: 35px 39px;
+ 
   @media screen and (min-width: 768px) {
     padding: 28px 29px;
   }
 }
 
 .swiper {
-  width: 280px;
-
+  
   @media screen and (min-width: 480px) {
     width: 100%;
   }
   @media screen and (min-width: 768px) {
     width: 100%;
+  }
+}
+
+.second-slider-picture, .third-slider-picture {
+  width: 280px;
+  height: 130px;
+  @media screen and (min-width: 480px) {
+    width: 403px;
+  height: 187.09px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+     width: 594px;
+  height: 275.78px;
+  }
+   @media screen and (min-width: 1200px) {
+    width: 986px;
+  height: 410.75px;
   }
 }
