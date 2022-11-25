@@ -1,9 +1,20 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 body {
-    color: var(--primary-text-color);
-    background-color: var(--page-bg-color);
-    font-family: Montserrat, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.04em;
+  color: var(--primary-text-color);
+  background-color: var(--page-bg-color);
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+
+  cursor: url('../images/cursor.svg'), auto;
+
+  &.menu-no-scroll {
+    overflow: hidden;
   }
+}
+
+a,
+button {
+  cursor: url('../images/cursor-pointer.svg'), pointer;
+}
