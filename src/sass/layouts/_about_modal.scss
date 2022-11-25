@@ -1,0 +1,40 @@
+.about__backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  transition: opacity 300ms liner, visibility 300ms liner;
+  z-index: 300;
+}
+
+.about__modal {
+  width: 280px;
+  min-height: 459px;
+  background-color: $primary-link-color;
+
+  z-index: 301;
+  border-radius: 10px;
+  border: 2px solid #f8d24e;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 300ms liner;
+}
+
+.about__close-btn {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
