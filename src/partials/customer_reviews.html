@@ -16,14 +16,22 @@
                 "
                 src="./images/gallery/sliderPic1xDesk1.jpg"
                 alt="ice cream in the waffle cup"
+                class="slider_picture first-slider-picture"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/gallery/sliderPic1xDesk2.jpg"
+                alt="ice cream in waffle cup"
                 class="slider_picture"
               />
             </div>
             <div class="swiper-slide">
-              <img src="./images/gallery/sliderPic1xDesk2.jpg" alt="ice cream in waffle cup" class="slider_picture" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/gallery/sliderPic1xDesk3.jpg" alt="ice cream in waffle cup" class="slider_picture"/>
+              <img
+                src="./images/gallery/sliderPic1xDesk3.jpg"
+                alt="ice cream in waffle cup"
+                class="slider_picture"
+              />
             </div>
             ...
           </div>
@@ -37,20 +45,49 @@
     <h2 class="visually-hidden">Customers gallery</h2>
     <div class="container">
       <div class="slider">
+        
         <div class="slider-pictures">
-          <img
-            srcset="
-              ./images/gallery/sliderPortret1xMOB1.jpg,
-              ./images/gallery/sliderPortret2xMOB1.jpg,
-              ./images/gallery/sliderPortret1xTAB1.jpg,
-              ./images/gallery/sliderPortret2xTAB1.jpg,
-              ./images/gallery/sliderPortret1xDesk1.jpg,
-              ./images/gallery/sliderPortret2x1Desk1.jpg
-            "
-            src="./images/gallery/sliderPortret1xMOB1.jpg"
-            alt="Emily"
-            class="customer-photo"
-          />
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  srcset="
+                    ./images/gallery/sliderPortret1xMOB1.jpg,
+                    ./images/gallery/sliderPortret2xMOB1.jpg,
+                    ./images/gallery/sliderPortret1xTAB1.jpg,
+                    ./images/gallery/sliderPortret2xTAB1.jpg,
+                    ./images/gallery/sliderPortret1xDesk1.jpg,
+                    ./images/gallery/sliderPortret2x1Desk1.jpg
+                  "
+                  src="./images/gallery/sliderPortret1xMOB1.jpg"
+                  alt="Emily"
+                  class="customer-photo"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  srcset="
+                    ./images/gallery/sliderPortrait1xDesk2.jpg,
+                    ./images/gallery/sliderPortrait2xDesk2.jpg
+                  "
+                  alt="Bryan"
+                  class="customer-photo"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  srcset="
+                    ./images/gallery/sliderPortrait1xDesk3.jpg,
+                    ./images/gallery/sliderPortrait2xDesk3.jpg
+                  "
+                  alt="Diana"
+                  class="customer-photo"
+                />
+              </div>
+              ...
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
 
         <div class="reviews-box">
