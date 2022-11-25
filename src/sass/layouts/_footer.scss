@@ -81,10 +81,16 @@
     margin-bottom: 40px;
   }
 }
-
-.footer__social-icon:hover,
-.footer__social-icon:focus {
-  fill: var(--btn-text-light-color);
+.footer__item {
+  color: var(--primary-color);
+  &:hover,
+  &:focus {
+    fill: var(--btn-text-light-color);
+    color: var(--btn-text-light-color);
+  }
+}
+.footer__social-icon {
+  fill: currentColor;
 }
 
 .footer__tel {
