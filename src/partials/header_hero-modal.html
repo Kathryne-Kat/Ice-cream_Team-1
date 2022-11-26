@@ -1,0 +1,86 @@
+<div class="overlay header-modal__overlay is-hidden" data-header-modal>
+  <div class="header-modal" id="header-modal-window">
+    <button type="button" class="header-modal__btn" data-header-modal-close>
+      <svg class="header-modal__icon">
+        <use href="./images/icons.svg#close-modal"></use>
+      </svg>
+    </button>
+    <p class="header-modal__title">Buy now</p>
+    <ul class="header-modal__list">
+      <li class="header-modal__item">
+        <div class="header-modal__wrap">
+          <img
+            srcset="
+              ./images/hero-header/header-modal-img1.jpg    1x,
+              ./images/hero-header/header-modal-img1@2x.jpg 2x
+            "
+            src="./images/hero-header/header-modal-img1.jpg"
+            alt="Ice cream"
+          />
+        </div>
+        <p class="header-modal__text">Ice cream</p>
+      </li>
+      <li class="header-modal__item">
+        <div class="header-modal__wrap">
+          <img
+            srcset="
+              ./images/hero-header/header-modal-img2.jpg    1x,
+              ./images/hero-header/header-modal-img2@2x.jpg 2x
+            "
+            src="./images/hero-header/header-modal-img2.jpg"
+            alt="Ice coffee"
+          />
+        </div>
+        <p class="header-modal__text">Ice coffee</p>
+      </li>
+      <li class="header-modal__item">
+        <div class="header-modal__wrap">
+          <img
+            srcset="
+              ./images/hero-header/header-modal-img3.jpg    1x,
+              ./images/hero-header/header-modal-img3@2x.jpg 2x
+            "
+            src="./images/hero-header/header-modal-img3.jpg"
+            alt="Milkshake"
+          />
+        </div>
+        <p class="header-modal__text">Milkshake</p>
+      </li>
+    </ul>
+    <form class="header-modal__form" autocomplete="off">
+      <div class="header-modal__field">
+        <input
+          type="text"
+          name="name"
+          placeholder=" "
+          id="name"
+          class="header-modal__input"
+        />
+        <label for="name" class="header-modal__label">Name</label>
+      </div>
+      <div class="header-modal__field">
+        <input
+          type="tel"
+          name="tel"
+          placeholder=" "
+          id="tel"
+          class="header-modal__input"
+        />
+        <label for="tel" class="header-modal__label">Phone</label>
+      </div>
+      <div class="header-modal__field">
+        <textarea
+          name="comment"
+          id="comment"
+          rows="3"
+          placeholder=" "
+          class="header-modal__input"
+        ></textarea>
+        <label for="comment" class="header-modal__label">Comment</label>
+      </div>
+      <button type="submit" class="header__btn header__btn--small">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>

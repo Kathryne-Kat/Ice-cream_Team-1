@@ -1,23 +1,3 @@
-// GENERAL
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  @include sizes(100%, 100%);
-  opacity: 1;
-  overflow-y: scroll;
-  background-color: rgba(25, 28, 38, 0.2);
-  transition: opacity $time $function, visibility $time $function;
-}
-
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
 // HEADER
 
 .header {
@@ -94,6 +74,7 @@
   @include centeredFlex;
   gap: 4px;
   @include sizes(152px, 42px);
+  flex-shrink: 0;
   font-weight: 600;
   font-size: 14px;
   line-height: calc(17 / 14);
@@ -132,6 +113,12 @@
   margin: 0 auto;
   font-size: 12px;
   line-height: calc(15 / 12);
+
+  @include adaptive(tab-min) {
+    width: 121px;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
 }
 
 .header__icon {
@@ -257,7 +244,7 @@
   position: fixed;
   bottom: 10px;
   right: 20px;
-  z-index: 899;
+  z-index: 50;
   justify-content: center;
   align-items: center;
   @include sizes(36px, 36px);
@@ -281,7 +268,7 @@
 
   @include adaptive(desk) {
     bottom: 30px;
-    right: 16px;
+    right: 40px;
     @include sizes(60px, 60px);
   }
 }
@@ -297,181 +284,6 @@
 
   @include adaptive(desk) {
     @include sizes(60px, 60px);
-  }
-}
-
-// MODAL WINDOW
-
-// .modal-overlay {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   z-index: 100;
-//   @include sizes(100%, 100%);
-//   opacity: 1;
-//   overflow-y: scroll;
-//   background-color: rgba(25, 28, 38, 0.2);
-//   transition: opacity $time $function, visibility $time $function;
-// }
-
-// .modal-is-hidden {
-//   visibility: hidden;
-//   opacity: 0;
-//   pointer-events: none;
-// }
-
-.header-modal__overlay {
-  @include adaptive(mob-only) {
-    padding: 20px;
-  }
-}
-
-.header-modal {
-  position: relative;
-  padding: 28px;
-  text-align: center;
-  background-color: $modal-bg-color;
-  border: 2px solid $accent-color;
-  border-radius: 10px;
-
-  @include adaptive(tab-min) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 568px;
-    padding: 32px;
-  }
-}
-
-.header-modal__btn {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  @include centeredFlex;
-  @include sizes(20px, 20px);
-  color: $secondary-link-color;
-  background-color: transparent;
-  border: none;
-
-  @include adaptive(tab-min) {
-    @include sizes(24px, 24px);
-  }
-}
-
-.header-modal__icon {
-  flex-shrink: 0;
-  @include sizes(20px, 20px);
-  fill: currentColor;
-
-  @include adaptive(tab-min) {
-    @include sizes(24px, 24px);
-  }
-}
-
-.header-modal__title {
-  margin-bottom: 20px;
-  font-family: 'Seymour One';
-  font-size: 16px;
-  line-height: calc(24 / 16);
-  color: $secondary-text-color;
-
-  @include adaptive(tab-min) {
-    margin-bottom: 40px;
-    font-size: 20px;
-    line-height: calc(28 / 20);
-  }
-}
-
-.header-modal__list {
-  margin-bottom: 28px;
-
-  @include adaptive(tab-min) {
-    @include centeredFlex;
-    gap: 32px;
-    margin-bottom: 40px;
-  }
-}
-
-.header-modal__item {
-  @include sizes(132px, 136px);
-  margin: 0 auto;
-  padding-top: 96px;
-  padding-bottom: 20px;
-  border: 2px solid;
-  border-radius: 16px;
-
-  &:nth-child(1) {
-    border-color: #96af8c;
-    filter: drop-shadow(0px 5px 20px rgba(212, 20, 67, 0.1));
-  }
-
-  &:nth-child(2) {
-    background-color: #efd478;
-    border-color: #efd478;
-    box-shadow: 0px 5px 20px rgba(212, 20, 67, 0.1);
-  }
-
-  &:nth-child(3) {
-    border-color: #d6936d;
-    filter: drop-shadow(0px 5px 20px rgba(212, 20, 67, 0.1));
-  }
-
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
-}
-
-.header-modal__text {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: $secondary-text-color;
-}
-
-.header-modal__field {
-  position: relative;
-  margin-bottom: 12px;
-
-  &:last-of-type {
-    margin-bottom: 24px;
-  }
-}
-
-.header-modal__label {
-  position: absolute;
-  top: 6px;
-  left: 12px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.4;
-  color: $secondary-text-color;
-  transition: transform $time $function;
-
-  .header-modal__input:not(:placeholder-shown) + &,
-  .header-modal__field:focus-within &,
-  .header-modal__field:focus & {
-    transform: translateY(-20px);
-  }
-}
-
-.header-modal__input {
-  width: 100%;
-  padding: 5px 12px;
-  font-family: inherit;
-  font-size: 14px;
-  color: $secondary-text-color;
-  background-color: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
-  border-radius: 10px;
-  outline: none;
-
-  &:not(:placeholder-shown),
-  &:focus-within,
-  &:focus {
-    border-color: $accent-color;
   }
 }
 
