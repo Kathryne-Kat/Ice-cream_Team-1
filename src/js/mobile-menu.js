@@ -5,11 +5,13 @@
     menu: document.querySelector('[data-menu]'),
     body: document.querySelector('body'),
     menuList: document.querySelector('.mobile-menu__list'),
+    menuModal: document.querySelector('[data-header-mobile-modal-open]'),
   };
 
   refs.openMenuBtn.addEventListener('click', toggleMenu);
   refs.closeMenuBtn.addEventListener('click', toggleMenu);
   refs.menuList.addEventListener('click', removeMenu);
+  refs.menuModal.addEventListener('click', removeMenu);
 
   function toggleMenu() {
     refs.menu.classList.toggle('is-hidden');
