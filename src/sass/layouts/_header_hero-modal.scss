@@ -263,6 +263,10 @@
   border-radius: 10px;
   outline: none;
 
+  &::placeholder {
+    color: rgba(248, 210, 78, 0.1);
+  }
+
   &:not(:placeholder-shown),
   &:focus-within,
   &:focus {

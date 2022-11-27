@@ -73,8 +73,11 @@
     flex-direction: column;
   }
   border-radius: 24px;
-  column-gap: 29px;
-  flex-basis: 0 1 calc((100% - 2 * 29px) / 3);
+  column-gap: 16px;
+  flex-basis: calc((100% - 2 * 16px) / 3);
+  @include adaptive(desk) {
+    column-gap: 29px;
+  }
 }
 .product-item {
   position: relative;

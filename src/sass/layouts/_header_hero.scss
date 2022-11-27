@@ -160,7 +160,7 @@
   transform: translateX(0);
   transition: transform $time $function;
 
-  .menu-overlay.menu-is-hidden & {
+  .overlay.is-hidden & {
     transform: translateX(100%);
   }
 
