@@ -1,34 +1,34 @@
-.slider-container {
-  background-image: url('../images/gallery/icecream1xbgMOB.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  height: 685px;
-  //   position: relative;
+// .slider-container {
+//   background-image: url('../images/gallery/icecream1xbgMOB.jpg');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+//   text-align: center;
+//   height: 685px;
+//     position: relative;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url('../images/gallery/icecream2xbgMOB.jpg');
-  }
-  @media screen and (min-width: 480px) {
-    background-image: url('../images/gallery/icecream1xbgTAB.jpg');
-  }
-  @media (min-resolution: 2dppx) {
-    background-image: url('../images/gallery/icecream2xbgTAB.jpg');
-    height: 100%;
-  }
-  @media screen and (min-width: 768px) {
-    background-image: url('../images/gallery/icecream1xbgDesk.jpg');
-    height: 100%;
-    height: 730px;
-  }
-  @media (min-resolution: 2dppx) {
-    background-image: url('../images/gallery/icecream2xbgDesk.jpg');
-  }
-  @media screen and (min-width: 1200px) {
-    height: 935px;
-  }
-}
+//   @media (min-resolution: 2dppx) {
+//     background-image: url('../images/gallery/icecream2xbgMOB.jpg');
+//   }
+//   @media screen and (min-width: 480px) {
+//   background-image: url('../images/gallery/icecream1xbgTAB.jpg');
+//   }
+//   @media (min-resolution: 2dppx) {
+//     background-image: url('../images/gallery/icecream2xbgTAB.jpg');
+//     height: 100%;
+//   }
+//   @media screen and (min-width: 768px) {
+//   background-image: url('../images/gallery/icecream1xbgDesk.jpg');
+//     height: 100%;
+//     height: 730px;
+//   }
+//   @media (min-resolution: 2dppx) {
+//     background-image: url('../images/gallery/icecream2xbgDesk.jpg');
+//   }
+//     @media screen and (min-width: 1200px) {
+//       height: 935px;
+//     }
+// }
 
 .gallery {
   height: 150px;
