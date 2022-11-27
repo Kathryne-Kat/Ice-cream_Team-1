@@ -1,8 +1,20 @@
+.reviews {
+  margin-bottom: 40px;
+
+  @include adaptive(tab-min) {
+    margin-bottom: 80px;
+  }
+
+  @include adaptive(desk) {
+    margin-bottom: 100px;
+  }
+}
+
 .reviwers-img {
   width: 85px;
   height: 85px;
   border-radius: 50%;
-  margin: 80px auto 32px auto;
+  margin: 0 auto 32px auto;
   padding-top: 80px;
   background-size: cover;
   background-position: top center;

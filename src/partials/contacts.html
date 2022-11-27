@@ -1,111 +1,295 @@
-<section class="contacts" id="contacts">
-  <div class="container contacts__container">
-    <h2 class="contacts__header visually-hidden">Contacts</h2>
-    <ul class="contacts__list">
-      <li class="contacts__item">
-        <p class="contacts__text contacts__text--large">Cafe</p>
-        <p class="contacts__text contacts__text--city">Chicago</p>
-        <a
-          href="https://goo.gl/maps/Cbp1eoDgaKZPJFEo8"
-          target="_blank"
-          rel="noopener nereferrer"
-          class="contacts__link contacts__link--location"
-        >
-          10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
-        </a>
-        <div class="contacts__worktime">
-          <p class="contacts__text">Monday - Friday</p>
-          <p class="contacts__text contacts__text--light">
-            06:00 AM - 10:00 PM
-          </p>
+<div class="bg-ice-wrap">
+  <div class="slider-container">
+    <section class="gallery">
+      <h2 class="visually-hidden">Ice cream gallery</h2>
+      <div class="container slider-rel">
+        <div class="slider">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  srcset="
+                    ./images/gallery/gallery-Pic1-mob.jpg      280w,
+                    ./images/gallery/gallery-Pic1-mob@2x.jpg   560w,
+                    ./images/gallery/gallery-Pic1-tab.jpg      704w,
+                    ./images/gallery/gallery-Pic1-tab@2x.jpg  1408w,
+                    ./images/gallery/gallery-Pic1-desk.jpg    1013w,
+                    ./images/gallery/gallery-Pic1-desk@2x.jpg 2026w
+                  "
+                  sizes="(min-width: 1200px) 1013px, (min-width: 768px) 704px, (min-width: 320px) 280px, 280px"
+                  src="./images/gallery/gallery-Pic1-mob.jpg"
+                  alt="ice cream in the waffle cup"
+                  class="slider_picture first-slider-picture"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  srcset="
+                    ./images/gallery/gallery-Pic2-desk.jpg    1x,
+                    ./images/gallery/gallery-Pic2-desk@2x.jpg 2x
+                  "
+                  src="./images/gallery/gallery-Pic2-desk.jpg"
+                  alt="ice cream in waffle cup"
+                  class="slider_picture second-slider-picture"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  srcset="
+                    ./images/gallery/gallery-Pic3-desk.jpg    1x,
+                    ./images/gallery/gallery-Pic3-desk@2x.jpg 2x
+                  "
+                  src="./images/gallery/gallery-Pic3-desk.jpg"
+                  alt="ice cream in waffle cup"
+                  class="slider_picture third-slider-picture"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
-        <div class="contacts__worktime">
-          <p class="contacts__text">Saturday - Sunday</p>
-          <p class="contacts__text contacts__text--light">
-            08:00 AM - 16:00 PM
-          </p>
-        </div>
-        <a class="contacts__link" href="tel:+610383766284">
-          +61(0) 383 766 284</a
-        >
-        <a class="contacts__link" href="mailto:noreply@envato.com">
-          noreply@envato.com</a
-        >
-      </li>
-      <li class="contacts__item">
-        <p class="contacts__text contacts__text--large">Foodtruck</p>
-        <p class="contacts__text contacts__text--city">Los Angeles</p>
-        <a
-          href="https://goo.gl/maps/Q4FP8py18WqMuHaEA"
-          target="_blank"
-          rel="noopener nereferrer"
-          class="contacts__link contacts__link--location"
-        >
-          1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
-        </a>
-        <div class="contacts__worktime">
-          <p class="contacts__text">Monday - Friday</p>
-          <p class="contacts__text contacts__text--light">
-            06:00 AM - 10:00 PM
-          </p>
-        </div>
-        <div class="contacts__worktime">
-          <p class="contacts__text">Saturday - Sunday</p>
-          <p class="contacts__text contacts__text--light">
-            08:00 AM - 16:00 PM
-          </p>
-        </div>
-        <a class="contacts__link" href="tel:+610383766284">
-          +61(0) 383 766 284</a
-        >
-        <a class="contacts__link" href="mailto:noreply@envato.com">
-          noreply@envato.com</a
-        >
-      </li>
-      <li class="contacts__item">
-        <p class="contacts__text contacts__text--large">Cafe</p>
-        <p class="contacts__text contacts__text--city">New York</p>
-        <a
-          href="https://goo.gl/maps/6RiAWLgjcW172bfPA"
-          target="_blank"
-          rel="noopener nereferrer"
-          class="contacts__link contacts__link--location"
-        >
-          726 Sterling Pl, Brooklyn, NY 11222, USA
-        </a>
-        <div class="contacts__worktime">
-          <p class="contacts__text">Monday - Friday</p>
-          <p class="contacts__text contacts__text--light">
-            06:00 AM - 10:00 PM
-          </p>
-        </div>
-        <div class="contacts__worktime">
-          <p class="contacts__text">Saturday - Sunday</p>
-          <p class="contacts__text contacts__text--light">
-            08:00 AM - 16:00 PM
-          </p>
-        </div>
-        <a class="contacts__link" href="tel:+610383766284">
-          +61(0) 383 766 284</a
-        >
-        <a class="contacts__link" href="mailto:noreply@envato.com">
-          noreply@envato.com</a
-        >
-      </li>
-    </ul>
-    <div class="contacts__btn">
-      <button type="button" class="location-btn btn-secondary">
-        Our Locations
-        <svg class="contacts__icon">
-          <use class="button-arrow" href="./images/icons.svg#arrow-small"></use>
-        </svg>
-      </button>
-      <button type="button" class="franchise-btn btn-primary">
-        Franchise
-        <svg class="contacts__icon">
-          <use class="button-arrow" href="./images/icons.svg#arrow-small"></use>
-        </svg>
-      </button>
-    </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <h2 class="visually-hidden">Customers gallery</h2>
+        <div class="reviwers-img"></div>
+        <p class="reviews-text">
+          I love visiting your cafe. You prepare the most delicious ice cream in
+          Los Angeles! In addition, you have beautiful serving, cozy atmosphere
+          and polite staff.
+        </p>
+        <p class="reviews-name">Emily, Los Angeles</p>
+      </div>
+    </section>
   </div>
-</section>
+
+  <!-- <section class="customer-reviews">
+    <h2 class="visually-hidden">Customers gallery</h2>
+    <div class="container">
+      <div class="slider">
+        <div class="slider-pictures">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  srcset="
+                    ./images/gallery/sliderPortret1xMOB1.jpg,
+                    ./images/gallery/sliderPortret2xMOB1.jpg,
+                    ./images/gallery/sliderPortret1xTAB1.jpg,
+                    ./images/gallery/sliderPortret2xTAB1.jpg,
+                    ./images/gallery/sliderPortret1xDesk1.jpg,
+                    ./images/gallery/sliderPortret2x1Desk1.jpg
+                  "
+                  src="./images/gallery/sliderPortret1xMOB1.jpg"
+                  alt="Emily"
+                  class="customer-photo"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  srcset="
+                    ./images/gallery/sliderPortrait1xDesk2.jpg,
+                    ./images/gallery/sliderPortrait2xDesk2.jpg
+                  "
+                  alt="Bryan"
+                  class="customer-photo"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  srcset="
+                    ./images/gallery/sliderPortrait1xDesk3.jpg,
+                    ./images/gallery/sliderPortrait2xDesk3.jpg
+                  "
+                  alt="Diana"
+                  class="customer-photo"
+                />
+              </div>
+              ...
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="reviews-box">
+          <p class="reviews-text">
+            I love visiting your cafe. You prepare the most delicious ice cream
+            in Los Angeles! In addition, you have beautiful serving, cozy
+            atmosphere and polite staff.
+          </p>
+        </div>
+        <div class="customer-name"><p>Emily, Los Angeles</p></div>
+      </div>
+    </div>
+  </section>
+</div> -->
+  <div class="bg-green-wrap">
+    <section class="contacts" id="contacts">
+      <div class="container contacts__container">
+        <h2 class="contacts__header visually-hidden">Contacts</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <p class="contacts__text contacts__text--large">Cafe</p>
+            <p class="contacts__text contacts__text--city">Chicago</p>
+            <a
+              href="https://goo.gl/maps/Cbp1eoDgaKZPJFEo8"
+              target="_blank"
+              rel="noopener nereferrer"
+              class="contacts__link contacts__link--location"
+            >
+              10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
+            </a>
+            <div class="contacts__worktime">
+              <p class="contacts__text">Monday - Friday</p>
+              <p class="contacts__text contacts__text--light">
+                06:00 AM - 10:00 PM
+              </p>
+            </div>
+            <div class="contacts__worktime">
+              <p class="contacts__text">Saturday - Sunday</p>
+              <p class="contacts__text contacts__text--light">
+                08:00 AM - 16:00 PM
+              </p>
+            </div>
+            <a class="contacts__link" href="tel:+610383766284">
+              +61(0) 383 766 284</a
+            >
+            <a class="contacts__link" href="mailto:noreply@envato.com">
+              noreply@envato.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__text contacts__text--large">Foodtruck</p>
+            <p class="contacts__text contacts__text--city">Los Angeles</p>
+            <a
+              href="https://goo.gl/maps/Q4FP8py18WqMuHaEA"
+              target="_blank"
+              rel="noopener nereferrer"
+              class="contacts__link contacts__link--location"
+            >
+              1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
+            </a>
+            <div class="contacts__worktime">
+              <p class="contacts__text">Monday - Friday</p>
+              <p class="contacts__text contacts__text--light">
+                06:00 AM - 10:00 PM
+              </p>
+            </div>
+            <div class="contacts__worktime">
+              <p class="contacts__text">Saturday - Sunday</p>
+              <p class="contacts__text contacts__text--light">
+                08:00 AM - 16:00 PM
+              </p>
+            </div>
+            <a class="contacts__link" href="tel:+610383766284">
+              +61(0) 383 766 284</a
+            >
+            <a class="contacts__link" href="mailto:noreply@envato.com">
+              noreply@envato.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__text contacts__text--large">Cafe</p>
+            <p class="contacts__text contacts__text--city">New York</p>
+            <a
+              href="https://goo.gl/maps/6RiAWLgjcW172bfPA"
+              target="_blank"
+              rel="noopener nereferrer"
+              class="contacts__link contacts__link--location"
+            >
+              726 Sterling Pl, Brooklyn, NY 11222, USA
+            </a>
+            <div class="contacts__worktime">
+              <p class="contacts__text">Monday - Friday</p>
+              <p class="contacts__text contacts__text--light">
+                06:00 AM - 10:00 PM
+              </p>
+            </div>
+            <div class="contacts__worktime">
+              <p class="contacts__text">Saturday - Sunday</p>
+              <p class="contacts__text contacts__text--light">
+                08:00 AM - 16:00 PM
+              </p>
+            </div>
+            <a class="contacts__link" href="tel:+610383766284">
+              +61(0) 383 766 284</a
+            >
+            <a class="contacts__link" href="mailto:noreply@envato.com">
+              noreply@envato.com</a
+            >
+          </li>
+        </ul>
+        <div class="contacts__btn">
+          <button type="button" class="location-btn btn-secondary">
+            Our Locations
+            <svg class="contacts__icon">
+              <use
+                class="button-arrow"
+                href="./images/icons.svg#arrow-small"
+              ></use>
+            </svg>
+          </button>
+          <button type="button" class="franchise-btn btn-primary">
+            Franchise
+            <svg class="contacts__icon">
+              <use
+                class="button-arrow"
+                href="./images/icons.svg#arrow-small"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__flex container">
+        <div class="footer__slogan">
+          <p class="footer__text">homemade ice cream made</p>
+          <p class="footer__title-text">with passion</p>
+        </div>
+        <div class="footer__contacts">
+          <ul class="footer__social">
+            <li class="footer__link">
+              <a class="footer__item" href="https://github.com" target="_blank">
+                <svg width="34" height="34" class="footer__social-icon">
+                  <use href="./images/icons.svg#github-footer"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__link">
+              <a
+                class="footer__item"
+                href="https://telegram.org"
+                target="_blank"
+              >
+                <svg width="34" height="34" class="footer__social-icon">
+                  <use href="./images/icons.svg#telegram-footer"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__link">
+              <a
+                class="footer__item"
+                href="https://www.facebook.com"
+                target="_blank"
+              >
+                <svg width="34" height="34" class="footer__social-icon">
+                  <use href="./images/icons.svg#facebook-footer"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="footer__tel">
+            Feel free to contact
+            <a class="footer__accent" href="tel:+610383766284"
+              >+61 (0) 383 766 284</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="copyright">© 2022 - IceCream. All Rights Reserved.</div>
+    </footer>
+  </div>
+</div>

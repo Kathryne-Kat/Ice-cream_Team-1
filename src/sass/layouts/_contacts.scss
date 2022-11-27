@@ -1,38 +1,117 @@
-.contacts {
-  background-image: linear-gradient($page-bg-color, $page-bg-color),
-    url('../images/gallery/icecream1xbgMOB.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 76%, cover;
-  background-position: center bottom, center top;
+.bg-ice-wrap {
+  // background-size: cover;
+  // background-position: top center;
+  // background-repeat: no-repeat;
+  // background-image: url('../images/product/ice-back320@1x.jpg');
+  // @media (min-device-pixel-ratio: 2),
+  //   (-webkit-min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //   background-image: url('../images/product/ice-back320@2x.jpg');
+  // }
+  // @media screen and (min-width: 768px) {
+  //   background-image: url('../images/product/ice-back768@1x.jpg');
+  //   @media (min-device-pixel-ratio: 2),
+  //     (-webkit-min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url('../images/product/ice-back768@2x.jpg');
+  //   }
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   background-image: url('../images/product/ice-back1200@1x.jpg');
+  //   @media (min-device-pixel-ratio: 2),
+  //     (-webkit-min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url('../images/product/ice-back1200@2x.jpg');
+  //   }
+  // }
+
+  background-image: url('../images/product/ice-back320@1x.jpg');
+  background-size: cover;
+  background-position: top center;
 
   @include bg-image {
-    background-image: linear-gradient($page-bg-color, $page-bg-color),
-      url('../images/gallery/icecream2xbgMOB.jpg');
+    background-image: url('../images/product/ice-back320@2x.jpg');
   }
 
   @include adaptive(tab-min) {
-    background-image: linear-gradient($page-bg-color, $page-bg-color),
-      url('../images/gallery/icecream1xbgTAB.jpg');
-    background-size: 100% 50%, cover;
+    background-image: url('../images/product/ice-back768@1x.jpg');
 
     @include bg-image {
-      background-image: linear-gradient($page-bg-color, $page-bg-color),
-        url('../images/gallery/icecream2xbgTAB.jpg');
+      background-image: url('../images/product/ice-back768@2x.jpg');
     }
   }
 
   @include adaptive(desk) {
-    background-image: linear-gradient($page-bg-color, $page-bg-color),
-      url('../images/gallery/icecream1xbgDesk.jpg');
-    background-size: 100% 81%, cover;
-    background-position: center bottom, bottom;
+    background-image: url('../images/product/ice-back1200@1x.jpg');
 
     @include bg-image {
-      background-image: linear-gradient($page-bg-color, $page-bg-color),
-        url('../images/gallery/icecream2xbgDesk.jpg');
+      background-image: url('../images/product/ice-back1200@2x.jpg');
     }
   }
 }
+
+.bg-green-wrap {
+  background-image: linear-gradient(
+    transparent 20%,
+    $page-bg-color 20%,
+    $page-bg-color 100%
+  );
+
+  @include adaptive(tab-min) {
+    background-image: linear-gradient(
+      transparent 32%,
+      $page-bg-color 32%,
+      $page-bg-color 100%
+    );
+  }
+
+  @include adaptive(desk) {
+    background-image: linear-gradient(
+      transparent 13%,
+      $page-bg-color 13%,
+      $page-bg-color 100%
+    );
+  }
+}
+
+// .contacts {
+//   background-image: linear-gradient($page-bg-color, $page-bg-color),
+//     url('../images/gallery/icecream1xbgMOB.jpg');
+//   background-repeat: no-repeat;
+//   background-size: 100% 76%, cover;
+//   background-position: center bottom, center top;
+
+//   @include bg-image {
+//     background-image: linear-gradient($page-bg-color, $page-bg-color),
+//       url('../images/gallery/icecream2xbgMOB.jpg');
+//   }
+
+//   @include adaptive(tab-min) {
+//     background-image: linear-gradient($page-bg-color, $page-bg-color),
+//       url('../images/gallery/icecream1xbgTAB.jpg');
+//     background-size: 100% 50%, cover;
+
+//     @include bg-image {
+//       background-image: linear-gradient($page-bg-color, $page-bg-color),
+//         url('../images/gallery/icecream2xbgTAB.jpg');
+//     }
+//   }
+
+//   @include adaptive(desk) {
+//     background-image: linear-gradient($page-bg-color, $page-bg-color),
+//       url('../images/gallery/icecream1xbgDesk.jpg');
+//     background-size: 100% 81%, cover;
+//     background-position: center bottom, bottom;
+
+//     @include bg-image {
+//       background-image: linear-gradient($page-bg-color, $page-bg-color),
+//         url('../images/gallery/icecream2xbgDesk.jpg');
+//     }
+//   }
+// }
 
 .contacts__list {
   margin-bottom: 20px;
@@ -174,6 +253,11 @@
       margin-top: 32px;
       margin-bottom: 32px;
     }
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
   }
 }
 
