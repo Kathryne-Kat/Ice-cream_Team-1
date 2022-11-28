@@ -10,7 +10,8 @@
 
 .about__modal {
   padding: 28px;
-  width: 280px;
+  width: 90%;
+  min-width: 280px;
   min-height: 459px;
   background-color: $primary-link-color;
 
@@ -22,6 +23,11 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 150ms liner;
+  @media (min-width: 480px) {
+    padding: 32px 60px;
+    width: 440px;
+    min-height: 449px;
+  }
 
   @media (min-width: 768px) {
     padding: 32px 60px;
